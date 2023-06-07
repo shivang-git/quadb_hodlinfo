@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/telegram.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div
+          class="container-fluid head align-items-center justify-content-between row"
+        >
+          <div class="logo col-12 col-sm-12 col-md-5 col-lg-3">
+            <a href="/"
+              ><img src="/hodlogo.png" width="400" height="65"
+            /></a>
+          </div>
+
+          <div class="right-head col-12 col-sm-12 col-md-5 col-lg-3">
+            <div
+              class="d-flex align-items-center justify-content-end"
+              style="gap: 30px"
+            >
+              <div class="switch-mode margin-10 d-inline-block">
+                <label class="switch">
+                  <input type="checkbox" id="darkModeToggle" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section d-flex justify-content-center align-items-center">
+        <div class="telegram-page text-center" style="padding-bottom: 20px">
+          <div class="header-telegram">
+            Connect
+            <img src="/telegram.png" style="filter: brightness(0.5) saturate(0%);" height="30px">
+            Telegram
+          </div>
+          <div class="header-telegram-heading">Add bot to your group</div>
+          <div class="sub-heading-telegram">Manual :</div>
+          <div>1. Open the telegram app.</div>
+          <div>2. Open the group you want to add the bot to.</div>
+          <div>3. Click on add members in group settings.</div>
+          <div>4. Search @HodlInfoBot and click it.</div>
+          <div class="sub-heading-telegram">
+            <br />
+            Automatic :
+          </div>
+          <div>
+            Go to :
+            <a class="tg-link" href="https://t.me/HodlInfoBot?startgroup=true"
+              >https://t.me/HodlInfoBot?startgroup=true</a
+            >
+          </div>
+          <br />
+          <div>Chat with the bot</div>
+          <div>Manual :</div>
+          <div>1. Open the telegram app.</div>
+          <div>2. Click on new message button.</div>
+          <div>3. In search bar type HodlInfoBot.</div>
+          <div>4. Click on @HodlInfoBot.</div>
+          <div class="sub-heading-telegram"><br />Automatic :</div>
+          <div>
+            Go to :
+            <a class="tg-link" href="https://t.me/HodlInfoBot"
+              >https://t.me/HodlInfoBot</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="d-flex">
+          <div class="texts">Copyright C 2019</div>
+          <div class="texts" style="padding-left: 10px">HodlInfo.com</div>
+          <div class="texts" style="margin-left: auto">Support</div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-center"
+        style="
+          border: solid 1px #191d28;
+          background-color: #191d28;
+          position: fixed;
+          left: 0;
+          align-items: center;
+          width: 100vw;
+          height: 47px;
+          bottom: 0;
+          z-index: 8;
+        "
+      >
+        <button
+          class="add-button btn btn-outline-info"
+          style="position: absolute"
+        >
+          Add hodlinfo to home screen
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+        
+        darkModeToggle.addEventListener("change", function () {
+          body.classList.toggle("dark-mode");
+        
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+.dark-mode {
+    background-color: rgb(25, 29, 40);
+    color: #fff;
+}
+
+
+.row-dark{
+    background-color:#2e3241;
+    color: white;
+}
+
+/* header css */
+.head {
+  padding: 15px 10px 0px 10px;
+}
+
+.logo {
+  padding-right: 50px;
+}
+
+.button,
+.buttons {
+  padding-left: 25px;
+}
+.dropdown-item {
+  text-align: left;
+}
+
+/* section css */
+.color-green {
+  color: #5dc7c2;
+  font-size: 40px;
+}
+
+.time {
+  color: rgb(179, 179, 179);
+  font-weight: lighter;
+}
+
+.sub-txt-head {
+  padding-top: 0px;
+  color: rgba(179, 179, 179, 0.795);
+  font-size: 30px;
+}
+
+.price {
+  font-size: 80px;
+}
+
+.sub-txt {
+  padding-bottom: 20px;
+  color: rgba(179, 179, 179, 0.795);
+  font-weight: lighter;
+}
+
+/* table css */
+.main-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0em 1.5em;
+  overflow-x: scroll;
+}
+.thead {
+  color: rgba(112, 112, 112, 0.623);
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+tbody > tr {
+  background-color: #f8f9fa;
+  border-spacing: 0 1em;
+}
+tbody {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.logos {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+.platform {
+  padding-left: 16px;
+  text-align: center;
+}
+
+.text-pad {
+  padding: 0.75em;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.color-greens {
+  color: #5dc7c2;
+}
+.color-red {
+  color: #da5757;
+}
+/* footer css */
+.texts {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.footer {
+  position: fixed;
+  padding: 12px;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 2px solid rgba(43, 43, 43, 0.178);
+}
+
+/* switch css */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f3f3f3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #5dc7c2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1f2e3a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #883712;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#countdown-number {
+    position: relative;
+    left: 29.5px;
+    color: #5dc7c2;
+    display: inline-block;
+    line-height: 40px;
+}
+  
+  svg {
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+  
+  svg circle {
+    stroke-dasharray: 113px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #5dc7c2;
+    fill: none;
+    animation: countdown 60s linear infinite forwards;
+  }
+  
+  @keyframes countdown {
+    from {
+      stroke-dashoffset: 0px;
+    }
+    to {
+      stroke-dashoffset: 113px;
+    }
+  }
